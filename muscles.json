@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "Day": "Monday",
+        "Preview": "img/dumbbellcurl.",
+        "Workout": "Biceps",
+        "Sets": 3,
+        "Reps": 12,
+        "Rest": "2-3min"
+    },
+    {
+        "id": 2,
+        "Day": "Tuesday",
+        "Preview": "img/dumbbellcurl.gf",
+        "Workout": "Chest",
+        "Sets": 3,
+        "Reps": 12,
+        "Rest": "2-3min"
+    },
+    {
+        "id": 3,
+        "Day": "Wednesday",
+        "Preview": "img/dumbbellcurl.gf",
+        "Workout": "Shoulders",
+        "Sets": 3,
+        "Reps": 12,
+        "Rest": "2-3min"
+    },
+    {
+        "id": 4,
+        "Day": "Thursday",
+        "Preview": "img/dumbbellcurl.gf",
+        "Workout": "Legs",
+        "Sets": 3,
+        "Reps": 12,
+        "Rest": "2-3min"
+    },
+    {
+        "id": 5,
+        "Day": "Friday",
+        "Preview": "img/dumbbellcurl.if",
+        "Workout": "Core",
+        "Sets": 3,
+        "Reps": 15,
+        "Rest": "2-3min"
+    }
+]

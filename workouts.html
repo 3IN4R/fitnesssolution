@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fit4Life" />
+    <meta
+      name="keywords"
+      content="Fitness, diet, healthy lifestyle"/>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:ital,wght@0,100;1,500&family=STIX+Two+Text&display=swap" rel="stylesheet">
+    <title>Fit4Life - The Workout</title>
+</head>
+<body>
+  <header class="galnav">
+        
+    <a href="index.html" class="logo">
+        <img class="logo-img" src="img/fit4lie logo2.png" alt="Fit4life logo">
+    </a>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="shop.html">Shop</a>
+        </li>
+        <li>
+          <a href="workouts.html" id="training">The Training</a>
+        </li>
+        <li>
+          <a href="calories.html" id="diet">tHE nutrition</a>
+        </li>
+        <li>
+          <a href="mindset.html" id="mindset">The Mindset</a>
+        </li>
+        <li>
+          <a href="about.html" id="about">About</a>
+        </li>
+        <img class="dk" id="dklang" onclick="langChange()" src="img/dk.jpeg">
+      </ul>
+     
+    </nav>
+
+</header>
+<h1 class="calorie-heading">The Training</h1>
+    
+
+<div class="big-index-container" style="margin-top: 1.5rem; margin-bottom: 0%;">
+  <div class="index-container" style="margin:  0rem 2rem;">
+    <img class="images" src="/img/workout.jpg" alt="man lifting weights" />
+    <div class="text">
+      <h1 class="introheading" >Your First Workout Plan</h1>
+      <h2 class="introheading2" >
+        
+      </h2>
+      <div class="textoid">
+        <p id="textas">
+          Here you can get your first free 5 day exercise plan targeting all of the muscle groups. We’ve worked exhaustively and have tested it ourselves and have concluded that this is the perfect science-based beginner plan.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+        <div class="workout-page-second-element" style="margin-bottom: 1.5rem;">
+          <div class="table-button-parent">  <a href="#muscleGain"><button class="table-button" onclick="fade2()">Preview plan</button></a>  <p style="margin-top: .5rem; color: white;">Or download it <a style="text-decoration: none; " href="./img/plan.jpg"><span style=" color: #db7706;">here</span></a></p> 
+         </div>
+           
+   
+    <div class="table-parent">
+           <div class="table">
+               <table class="table1" id="muscleGain" >
+                   <thead>
+                   <tr>
+                       <th>Day</th>
+                       <th>Example</th>
+                       <th>Workout</th>
+                       <th>Sets</th>
+                       <th>Reps</th>
+                       <th>Rest</th>
+                   </tr>
+               </thead>
+               <tbody id="data-output"></tbody>
+               </table>
+           </div>
+         </div>
+   
+      </div>
+
+   <footer id="foot">
+    <div class="footer-content">
+      <div class="requisits">
+        <h1 id="contact-us" class="footer-header">Get in touch</h1>
+        <h2 class="footer-text"><i class="fa fa-map-marker"></i>Jægergårdsgade, 8000 Aarhus</h2>
+        <h2 class="footer-text" ><a href="tel:+4571816112" class="fa fa-phone"></a>  &nbsp;  +45 00 00 00 00</h2>
+        <h2 class="footer-text"><a href="mailto:Fit4life@gmail.com" class="fa fa-envelope" ></a>   &nbsp; Fit4life@gmail.com</h2>
+      </div>
+      <form action="/action_page.php">
+          <div class="container-form">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get our latest news and offers.</p>
+          </div>
+        
+          <div class="container-form" style="background-color:rgb(0, 0, 0)">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+         
+          </div>
+        
+          <div class="container-form">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+     
+    <div class="footer-bottom" id="lastfoot">
+      <ul class="socials">
+        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/fit4life/"
+            target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <p>copyright &copy; Fit4life 2024 </p>
+    </div>
+  </footer>
+
+  
+
+    <script src="/app.js"></script>
+</body>
+</html>

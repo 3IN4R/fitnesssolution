@@ -1,0 +1,1740 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:ital,wght@0,100;1,500&family=STIX+Two+Text&display=swap');
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+html {
+  scroll-behavior: smooth;overflow-x: hidden;
+}
+
+iframe{
+  width: 100%;
+  height: 330px;
+  margin: 0px, 0px;
+}
+
+
+video{
+  width: 100%;
+  height: auto;
+  position:relative;
+  z-index: 0;
+}
+
+/* Hiding video on smaller screens 
+@media only screen and (max-width: 900px) {
+video{
+  
+}
+}
+*/
+
+
+
+/* Nav */
+
+header {
+  font-family: 'STIX Two Text', serif;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.hdr{
+  background-color: #00000000;
+} 
+
+#headeris{
+  -webkit-transition-delay: 1s;
+    -o-transition-delay: .1s;
+    transition-delay: .1s;
+    -webkit-transition: 1s;
+    -o-transition: .1s;
+    transition: .2s;
+    
+}
+
+
+.logo {
+  padding-top: 2px;
+  padding-left: 1.5rem;
+}
+
+.logo-img{
+width: 14rem;
+height: auto;
+}
+
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  margin: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: .2rem;
+  background-color: #000000;
+  
+}
+
+.nav-bar ul li a:hover {
+  color: #db7706;
+  border-radius: .2rem;
+}
+
+.nav-bar ul li a.active {
+  color: #db7706;
+  border-radius: .2rem;
+  
+}
+
+@media only screen and (max-width: 1320px) {
+  header{
+      padding: 0 0px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header{
+      padding: 0 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamburger .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 3rem;
+      margin-right: 5rem;
+  }
+  .nav-bar {
+      height: 0;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background:#000000;
+      transition: 0.2s;
+      overflow: hidden;
+  }
+  .nav-bar.active {
+      z-index: 1;
+      height: 520px;
+      width: 100%;
+  }
+  .nav-bar ul {
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0.1s;
+      opacity: 0;
+      
+  }
+  .nav-bar.active ul {
+      opacity: 1;
+  }
+  .nav-bar ul li a {
+      margin-bottom: 12px;
+      color: rgb(255, 255, 255);
+      
+  }
+  header {
+      background-color: #000000;
+  }
+}
+
+.dk{
+  width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 100rem;
+        cursor: pointer;
+}
+/* Navbar-ends */
+
+
+/*Footer*/
+footer{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    width: 100%;
+    color: #db7706;
+}
+
+.fa {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.fa-map-marker{
+  color: #ffffff;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #000000;
+    justify-content: space-evenly;
+}
+
+.footer-text a{
+  color:#ffffff;
+}
+
+.footer-text{
+  text-align: justify;;
+}
+
+.footer-header{
+  padding-bottom: 0.2rem;
+  z-index: 99;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+.socials a i{
+    font-size: 2.0rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #db7706;
+}
+
+.footer-bottom{
+    width: 100vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+ }
+ .footer-bottom p a{
+   color:#ffffff;
+   font-size: 15px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+.requisits {
+  padding-top: 1rem;
+  font-family: 'STIX Two Text', serif;
+}
+
+.opening-hours{
+  padding-top: 1rem;
+}
+
+
+
+
+
+ @media only screen and (max-width: 900px) {
+    .aboutfoot{
+      position: absolute;
+      margin-bottom: 0;
+    }
+
+    footer{
+       background: #000000;
+    }
+ }
+/* Footer Ends*/
+
+
+/* Main-content */
+#reviews{
+  z-index: 0;
+}
+/* Intro section below video mobile */
+
+td, th, table{
+  font-family: 'STIX Two Text', serif;
+  border: 2px solid #db7706;
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s;
+  -webkit-transition: 1s;
+  -o-transition: .1s;
+  transition: .2s;
+  margin: auto;
+  width: 96%;
+  
+}
+
+.workout-page-second-element{
+  margin:  0rem 2rem;
+  padding: 2rem 2rem;
+  background-color: #000000;
+}
+
+.searcbar{
+  
+  width: 50%;
+  height: 3rem;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1.5rem 5.2rem;
+  color: #db7706;
+  font-family: 'STIX Two Text', serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.table1{
+  opacity: 0;
+}
+
+.heading-mindset{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'STIX Two Text', serif;
+  font-size: 3.2rem;
+  color: #ffffff;
+  background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+  -webkit-background-clip: text;
+    -webkit-text-stroke: 9px transparent;
+    text-transform: uppercase;
+}
+.subheading-mindset{
+  color:#db7706;
+  font-family: 'STIX Two Text', serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.8rem;
+
+}
+.mindset{
+  font-family: 'STIX Two Text', serif;
+  font-weight: bolder;
+  text-align: center;
+  margin: 2rem 2rem;
+  font-size: 2rem;
+}
+.paragraph-workouts{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: .2rem 2rem;
+  color:#db7706;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.workout-page{
+  background-color: #000000;
+  margin: 4.5rem 2.6rem;
+  margin-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.images{
+  width: 100%;
+  height: auto;
+  order: 4;
+}
+.images2{
+  width: 100%;
+  order: 4;
+}
+.index-container{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color:#000000;
+    padding: 1px 1px;
+    justify-content: center;
+    height: auto;
+    
+}
+
+
+
+.mindset-page{
+  display: flex; 
+  flex-wrap: nowrap;
+  background-color:#000000;
+  justify-content: center;
+  margin-bottom: 4.5rem;
+  margin-top: 11rem;
+}
+
+
+
+.introheading {
+  font-family: 'STIX Two Text', serif;
+    font-size: 8vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 2.0rem;
+}
+
+.introheading-2 {
+  font-family: 'STIX Two Text', serif;
+  font-size: 8vw;
+  color: #db7706;
+  text-align: left;
+  padding-top: 2rem;
+  padding-left: 2.0rem;
+}
+
+.introheading2 {
+  font-family: 'STIX Two Text', serif;
+    font-size: 5vw;
+    color: #db7706;
+    text-align: center;
+    padding-left: 2.0rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.introtext {
+    color: #ddd;
+}
+
+.textoid {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*Carousel for mindset section */
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.slides-container {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  margin-bottom: 2rem;
+}
+.slide {
+  width: 100%;
+  flex: 1 0 100%;
+  text-align: center;
+  font-family: 'STIX Two Text', serif;
+}
+.slides-container li {
+  font-size: 2rem;
+  color: #ffffff;
+ 
+}
+
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+
+.img-container {
+  padding: 0rem 0rem;
+}
+
+
+  .main-heading{
+    font-family: 'STIX Two Text', serif;
+    font-size: 2rem;
+    text-align: center;  
+    color:#db7706;
+    background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 5px transparent;
+    text-transform: uppercase;
+    
+  }
+
+  .main-heading-workouts{
+    font-family: 'STIX Two Text', serif;
+    font-size: 1.2rem;
+    text-align: center;  
+    color: #ffffff;
+    background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+
+  .table{
+    font-size: .8rem;
+  }
+
+  hr{
+    color: black; 
+    width: 77%; 
+    margin: auto; 
+    border-top: solid #000000; 
+    margin-bottom: .2rem;
+  }
+
+  .wbtn1{
+    color: #ccc;
+    font-weight: 600;
+  }
+
+  .wbtn1:hover{
+   color: #db7706;
+
+  }
+
+  .reference-div{
+    text-align: center;
+  }
+
+  .subheading{
+    color:#db7706;
+        font-family: Oswald-Medium;
+        text-align: center;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        background: linear-gradient(0deg, rgb(0, 0, 0), transparent) #000000;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+  }
+
+
+
+.food-card-container{
+  display: flex;
+}  
+
+  .calorie-container{
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+    margin-top: 1rem;
+   margin-bottom: 18rem;
+  }
+
+  .food-card{
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem 2rem;
+    border: 3px solid black;
+  }
+
+  .food-card li{
+    color:#db7706;
+    font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+  }
+
+  .food-lower-sec{
+    background-color: #000000;
+    padding: 1rem 2.5rem;
+  }
+
+  .food-name{
+    font-family: 'STIX Two Text', serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 4.2rem;
+  }
+
+  .food-display{
+    height: auto;
+  }
+
+  .calorie-heading{
+    font-family: 'STIX Two Text', serif;
+    text-transform: uppercase;
+    color:#db7706;
+    background: linear-gradient(0deg, rgb(0, 0, 0), transparent) #000000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 8rem;
+  }
+
+    
+  /* Intro-card-ends */
+
+
+  /* Home banner */
+
+ 
+  
+  /* Home banner ends */
+
+  /* Service menus */
+
+.servicesec{
+  display: block;
+  background-color: #061021;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servicesec-2{
+  display: block;
+  background-color: #061021;
+  padding-bottom: 1rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.index-services{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bookingbut{
+  font-family: 'STIX Two Text', serif;
+  border:2px solid rgb(251, 249, 255) ;
+  color: white;
+  background-color: #081120;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem; 
+  margin-left: 3.8rem;
+ 
+}
+
+.contbut{
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
+}
+
+
+  /* Service menu ends */
+
+
+/* Styling for Cards in Index and about */
+
+.serviceintro{
+  display: flex;
+ justify-content: center;
+
+}
+
+.serviceintro-2{
+  display: flex;
+  margin-top: 8rem;
+  justify-content: center;
+ }
+
+.ser{
+  font-family: 'Ephesis', cursive;
+  font-size: 5rem;
+  color: #B99C3F;
+}
+
+.customer-male{
+  font-family: 'STIX Two Text', serif;
+  font-size: 2.5rem;
+  color: #B99C3F;
+}
+
+.customer-selection{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.service-list{
+  font-family: 'STIX Two Text', serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.customer{
+  font-family: 'STIX Two Text', serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color:#081120;
+  border:2px solid rgb(251, 249, 255) ;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+.customer:hover{
+  background-color: #B99C3F;
+  color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+.customer-selection-services{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.customer-services{
+  font-family: 'STIX Two Text', serif;
+  font-size: 3rem;
+  color: #ffffff;
+  background-color:#081120;
+  border:2px solid rgb(251, 249, 255) ;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+
+.customer-services:hover{
+  background-color: #B99C3F;
+  color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+.gif{
+  width: 6rem;
+  height: 6rem;
+}
+/* Styling for Cards in Index and about ends */
+
+/* Mobile Banner */
+
+  .welcome-container{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    margin-top: 2.5rem;
+    
+  }
+  .welcome-banner{
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .big-index-container{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+  }
+  .table-button-parent{
+    text-align: center;
+  }
+  .table-button{
+    font-size: 1rem;
+    font-family: 'STIX Two Text', serif;
+    border:2px solid rgb(255, 255, 255) ;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem .5rem;
+    cursor: pointer;
+  }
+
+  .slogan{
+    font-family: 'STIX Two Text', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5rem;  
+    color: #000000;
+    background: linear-gradient(0deg, #ffffff, transparent) rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    text-transform: uppercase;
+  }
+  .wbtn{
+    font-family: 'STIX Two Text', serif;
+    border:2px solid rgb(251, 249, 255) ;
+    color: white;
+    background-color: #000000;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .wsbtn {
+    font-family: 'STIX Two Text', serif;
+    border:2px solid rgb(251, 249, 255) ;
+    color: white;
+    background-color: #081120;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+
+  .wbtn:hover {
+    transition-duration: .5s;
+    border-color: #db7706;
+  }
+
+  .wsbtn:hover {
+    background-color: #B99C3F;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+  }
+
+  .wsbtn-container{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 5rem;
+  }
+  .product-card{
+    display: block;
+   width: 255px;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border: 2px solid;
+  }
+  .newcard{
+    font-size:15px;
+  }
+
+
+  .lower-card{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    color: #db7706;
+  
+  }
+
+  .product-img{
+    display: block;
+    margin: auto;
+    height: 15rem;
+  }
+
+  .product-name{
+    text-align: center;
+    font-family: 'STIX Two Text', serif;
+  }
+
+  .product-description{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    word-spacing:-4.67px;
+  }
+
+  .big-shop-container{
+    display: flex;
+  }
+
+  .input-menu{
+    display: block;
+    padding: 2rem 2rem;
+    justify-content: center;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .shop-submit{
+    font-family: 'STIX Two Text', serif;
+  border:2px solid rgb(255, 255, 255) ;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  }
+
+  .main-heading-shop{
+    font-family: 'STIX Two Text', serif;
+    font-size: 3.2rem;
+    text-align: center;  
+    color:#db7706;
+    background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent;
+    text-transform: uppercase;
+    margin-top: 8rem;
+  }
+ 
+  
+  /* Desktop */
+  
+
+  @media only screen and (min-width: 650px) {
+
+    .shop-container{
+      margin: 1rem 1rem;
+    }
+
+    .big-index-container{
+      margin-top: .5rem;
+      margin-bottom: 2rem;
+    }
+
+    table{
+      font-size: 1.5rem;
+    }
+
+    .main-heading-workouts{
+      font-size: 2.5rem;
+    }
+
+    .slides-container li {
+      font-size: 4rem;
+     
+    }
+
+    .searcbar{
+      margin: 1.5rem 12rem;
+      width: 51%;
+      height: 3rem;
+      
+    }
+  
+    .reference-div{
+      text-align: start;
+    }
+    
+    .me{
+      width: 100%;
+      z-index: 0;
+      filter: blur(5px);
+    }
+    .images{
+      width: 100%;
+      height: auto;
+      order: 4;
+    }
+    .images2{
+      width: 100%;
+      height: auto;
+      order: 1;
+    }
+    .index-container{
+        display: flex; 
+        flex-wrap: wrap;
+        background-color:#000000;
+        padding: 1px 1px;
+        justify-content: center;
+       
+        height: auto;
+    }
+
+    .paragraph-workouts{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5;
+      margin: .2rem 2rem;
+    }
+
+    .slogan{
+      font-size: 4.5vw;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 5px transparent;
+    }
+    
+    .heading-mindset{
+      text-align: center;
+      font-family: 'STIX Two Text', serif;
+      font-size: 3rem;
+      color: #ffffff;
+      background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+      -webkit-background-clip: text;
+        -webkit-text-stroke: 9px transparent;
+        text-transform: uppercase;
+    }
+    
+    .main-heading{
+      font-family: 'STIX Two Text', serif;
+      font-size: 3rem;
+      text-align: center;  
+      background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 6px transparent;
+      text-transform: uppercase;
+    }
+
+    hr{
+      color: black; 
+      width: 35%; 
+      margin: auto; 
+      border-top: solid #000000; 
+      margin-bottom: 1rem;
+    }
+
+    .subheading{
+      font-size: 1.5vw;
+    }
+    .introheading {
+      font-family: 'STIX Two Text', serif;
+        font-size: 6vw;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 2rem;
+        padding-left: 2.0rem;
+    }
+    
+    .introheading-2 {
+      font-family: 'STIX Two Text', serif;
+      font-size: 10vw;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding-top: 2rem;
+      padding-left: 2.0rem;
+    }
+    
+    .introheading2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 4vw;
+        color: #db7706;
+        text-align: center;
+        padding-left: 2.0rem;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .introheading2-2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 2.5vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-left: 2.0rem;
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .introtext {
+        color: #ddd;
+    }
+    
+    .textoid {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 2.5rem;
+      padding: 1rem 4rem;
+      margin-bottom: 2rem;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    
+    .textoid-2 {
+      font-family: 'Roboto', sans-serif;;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: left;
+      padding: 3rem 1rem;
+      padding-top: 1.0rem;
+    }
+    
+    
+    .img-container {
+      padding: 0rem 0rem;
+    }
+    .owner{
+        animation-name: FadeIn;
+        animation-duration: 3s;
+        transition-timing-function: linear;
+        width: 50%;
+        height: 30rem;
+        
+      }
+      .servicesec{
+        display: block;
+        background-color: #061021;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .servicesec-2{
+        display: block;
+        background-color: #061021;
+        padding-bottom: 1rem;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+      }
+      .index-services{
+        display:block;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
+      .payments{
+        text-align: center;
+      }
+      
+      .howpay{
+        font-family: 'STIX Two Text', serif;
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+      
+      .paylogo{
+        width: 5rem;
+        height: 3rem;
+      }
+
+      .serviceintro{
+        display: flex;
+       justify-content: center;
+      
+      }
+      
+      .serviceintro-2{
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+       }
+      
+      .ser{
+        font-family: 'Ephesis', cursive;
+        font-size: 6rem;
+        color: #B99C3F;
+      }
+      
+      .customer-male{
+        font-family: 'STIX Two Text', serif;
+        font-size: 3.5rem;
+        color: #B99C3F;
+      }
+      
+      .customer-selection{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      .wbtn{
+        font-family: 'STIX Two Text', serif;
+        border:2px solid rgb(251, 249, 255) ;
+        color: white;
+        background-color: #000000;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3rem;
+      }
+      
+      .service-list{
+        font-family: 'STIX Two Text', serif;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+      
+      .customer{
+        font-family: 'STIX Two Text', serif;
+        font-size: 2rem;
+        color: #ffffff;
+        background-color:#081120;
+        border:2px solid rgb(251, 249, 255) ;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 3rem;
+      }
+      .customer:hover{
+        background-color: #B99C3F;
+        color: #081120;
+          transition-duration: 0.8s;
+          transition-property: background-color;
+      }
+      
+      .customer-selection-services{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+      }
+      
+      .customer-services{
+        font-family: 'STIX Two Text', serif;
+        font-size: 3rem;
+        color: #ffffff;
+        background-color:#081120;
+        border:2px solid rgb(251, 249, 255) ;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 3rem;
+      }
+      
+      .customer-services:hover{
+        background-color: #B99C3F;
+        color: #081120;
+          transition-duration: 0.8s;
+          transition-property: background-color;
+      }
+      
+      .gif{
+        width: 8rem;
+        height: 8rem;
+      }
+
+      .bookingbut{
+        font-family: 'STIX Two Text', serif;
+        border:2px solid rgb(251, 249, 255) ;
+        color: white;
+        background-color: #081120;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2rem; 
+        margin-left: 18rem;
+       
+      }
+     
+      .contbut{
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+
+      }
+    
+      .platform{
+        width: 22px;
+        height: 22px;
+      }
+    
+      .platform-container{
+        margin-top: .2rem;
+        display: inline-block;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .Bigbuttons{
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+        margin: 1rem 5rem;
+        
+      }
+
+
+      .wbtn1{
+        color: #ccc;
+        font-weight: 600;
+
+      }
+
+      .wbtn1:hover{
+       color: #db7706;
+
+      }
+      
+      .welcome-container{
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        margin-top: 12rem;
+        
+      }
+     
+
+      .workout-page{
+        background-color: #000000;
+        margin: 4.5rem 2.6rem;
+        margin-top: 8rem;
+      }
+
+      button{
+        font-family: 'STIX Two Text', serif;
+      border:2px solid rgb(255, 255, 255) ;
+      color: white;
+      background-color: #000000;
+      text-align: center;
+      text-decoration: none;
+      font-size: 5rem;
+      text-transform: uppercase;
+      padding: 1rem 1rem;
+      cursor: pointer;
+      }
+
+      button:hover{
+      color: #db7706;
+      border:2px solid #db7706 ;
+      transition-duration: .5s;
+      }
+
+    
+  }
+
+  @media only screen and (min-width: 900px) {
+    .slides-container li {
+      font-size: 4rem;
+     
+    }
+
+    .big-index-container{
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    .table-button{
+      font-size: 2rem;
+    }
+
+    .shop-container{
+      margin: 2rem 8rem;
+    }
+
+    .calorie-heading{
+      font-size: 3rem;
+    }
+
+    .searcbar{
+      margin: 1.5rem 22rem;
+      width: 50%;
+      height: 3rem;
+      font-size: 2.5rem;
+    }
+    
+    .paragraph-workouts{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5vw;
+      margin: .2rem 15rem;
+      margin-bottom: 2rem;
+    }
+
+    .heading-mindset{
+      margin-top: 2.5rem;
+      text-align: center;
+      font-family: 'STIX Two Text', serif;
+      font-size: 3rem;
+      color: #ffffff;
+      background: linear-gradient(0deg, #000000, transparent) rgb(0, 0, 0);
+      -webkit-background-clip: text;
+        -webkit-text-stroke: 9px transparent;
+        text-transform: uppercase;
+    }
+
+    .slogan{
+      font-size: 4.5vw;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 5px transparent;
+    }
+    .calorie-container{
+      display: flex; 
+      justify-content: center;
+     }
+    .me{
+      display: none;
+      width: 50%;
+    }
+    .welcome-container{
+      text-align: center;
+      position: absolute;
+      margin-top: 18rem;
+      z-index: 1;
+
+    }
+    .welcome-banner{
+      width: 100%;
+      height: auto;
+      
+    }
+  
+  
+    .wbtn{
+      font-family: 'STIX Two Text', serif;
+      border:2px solid rgb(251, 249, 255) ;
+      color: white;
+      background-color: #000000;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 2.5rem;
+    }
+    
+   
+  
+    .wsbtn {
+      font-family: 'STIX Two Text', serif;
+      border:2px solid rgb(251, 249, 255) ;
+      color: white;
+      background-color: #081120;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-size: 3rem;
+    }
+  
+    .wbtn:hover {
+      transition-duration: .5s;
+    }
+  
+    .wsbtn:hover {
+      background-color: #B99C3F;
+      color: #081120;
+      transition-duration: 0.6s;
+      transition-property: background-color;
+    }
+  
+    .wsbtn-container{
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    
+    .images{ 
+      order: 0;
+      width: 50%;
+     
+    }
+    .index-container{
+        display: flex; 
+        flex-wrap: nowrap;
+        background-color:#000000;
+        padding: 1px 1px;
+        justify-content: center;
+        max-width: 100%;
+        margin:  0rem 2rem;
+        height: auto;
+    }
+    
+    .index-container-2{
+      display: flex; 
+      flex-wrap: nowrap;
+      background-color:#081120;
+      padding: 1px 1px;
+      border-radius: 0.5rem;
+      justify-content: center;
+      max-width: 100%;
+      margin:  2rem 2rem;
+      margin-bottom: 2rem;
+      margin-top: 8rem;
+      height: auto;
+    }
+    
+    .introheading {
+      font-family: 'STIX Two Text', serif;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-top: 2rem;
+        padding-left: 2.0rem;
+    }
+    
+    .introheading-2 {
+      font-family: 'STIX Two Text', serif;
+      font-size: 4vw;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding-top: 2rem;
+      padding-left: 2.0rem;
+    }
+    
+    .introheading2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 2vw;
+        color: #db7706;
+        text-align: left;
+        padding-left: 2.0rem;
+        padding-top: 1rem;
+    }
+    .introheading2-2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-left: 2.0rem;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .introtext {
+        color: #ddd;
+    }
+    
+    .textoid {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 3rem 2.0rem;
+      padding-top: 2.5rem;
+      text-align: justify;
+      text-justify: inter-word;
+   
+    }
+    
+    
+    
+    .img-container {
+      padding: 0rem 0rem;
+    }
+      
+
+      .servicesec{
+        background-color: #061021;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin:  2rem 2rem;
+        padding: 1px 1px;
+        border-radius: 0.5rem;
+      }
+      .index-services{
+        display:block;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .dk{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 100rem;
+        transition: transform .7s ease-in-out;
+      }
+      .dk:hover{
+        transform: rotate(360deg);
+      }
+      .bookingbut{
+        font-family: 'STIX Two Text', serif;
+        border:2px solid rgb(251, 249, 255) ;
+        color: white;
+        background-color: #000000;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2rem; 
+        margin-left: 40rem;
+       
+      }
+     
+      .contbut{
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+
+      }
+       .bookingbut:hover{
+        background-color:#B99C3F;
+        border: #B99C3F;
+        color: #081120;
+        transition-duration: 0.7s;
+      }
+
+      form {
+        margin-top: 1rem;
+        font-family: Arial;
+      }
+      
+      .container-form {
+       
+        background-color: #000000;
+      }
+      
+   
+      
+   
+      .product-card{
+        display: block;
+       width: 255px;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        border: 2px solid;
+      }
+      .newcard{
+        font-size:15px;
+      }
+
+
+      .lower-card{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1.5rem;
+        color: #db7706;
+      
+      }
+
+      .product-img{
+        display: block;
+        margin: auto;
+        height: 15rem;
+      }
+
+      .product-name{
+        text-align: center;
+        font-family: 'STIX Two Text', serif;
+      }
+
+      .product-description{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        word-spacing:-4.67px;
+      }
+
+      .big-shop-container{
+        display: flex;
+      }
+
+      .input-menu{
+        display: block;
+        padding: 2rem 2rem;
+        justify-content: center;
+      }
+
+      .hidden{
+        display: none;
+      }
+
+      .shop-submit{
+        font-family: 'STIX Two Text', serif;
+      border:2px solid rgb(255, 255, 255) ;
+      color: white;
+      background-color: #000000;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 1rem 1rem;
+      cursor: pointer;
+      }
+  }
+
+
+  
+

@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "image": "img/t-shirt.png",
+        "name": "T-Shirt",
+        "description": "Cotton, slimfit, sweat-absorbant",
+        "price":"155dkk",
+        "type":"clothing"
+    },
+    {
+        "id": 2,
+        "image": "img/omega3.webp",
+        "name": "Omega 3",
+        "description": "Whey, isolate, low-calorie",
+        "price":"355dkk",
+        "type":"supplement"
+    },
+    {
+        "id": 3,
+        "image": "img/cap.png",
+        "name": "Cap - Black",
+        "description": "Cotton, Breathable",
+        "price":"125dkk"
+    },
+    {
+        "id": 4,
+        "image": "img/protein.png",
+        "name": "Protein",
+        "description": "Whey, isolate, low-calorie",
+        "price":"655dkk"
+    },
+
+    {
+        "id": 5,
+        "image": "img/shorts.png",
+        "name": "Shorts - Black",
+        "description": "Cotton, slimfit, sweat-absorbant",
+        "price":"155dkk"
+    },
+
+    {
+        "id": 6,
+        "image": "img/bottle.png",
+        "name": "Drinking Bottle",
+        "description": "Plastic, durable",
+        "price":"155dkk"
+    }
+    
+]

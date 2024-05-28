@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "image": "img/carrots.png",
+        "name": "Carrots",
+        "calories": "1",
+        "protein":"1",
+        "vitamins":"A,b,c."
+    },
+    {
+        "id": 2,
+        "image": "img/broccoli.png",
+        "name": "Chicken",
+        "calories": "1",
+        "protein":"1",
+        "vitamins":"A,b,c."
+    },
+    {
+        "id": 3,
+        "image": "img/broccoli.png",
+        "name": "Salmon",
+        "calories": "1",
+        "protein":"1",
+        "vitamins":"A,b,c."
+    },
+    {
+        "id": 4,
+        "image": "img/rice.png",
+        "name": "Rice",
+        "calories": "1",
+        "protein":"1",
+        "vitamins":"A,b,c."
+    },
+    {
+        "id": 5,
+        "image": "img/broccoli.png",
+        "name": "Banana",
+        "calories": "1",
+        "protein":"1",
+        "vitamins":"A,b,c."
+    },
+    {
+        "id": 6,
+        "image": "img/broccoli.png",
+        "name": "Broccoli",
+        "calories": "1",
+        "protein":"1",
+        "vitamins":"A,b,c."
+    }
+]
